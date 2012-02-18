@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9EB6078914EEE9A700E6E1CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB6078814EEE9A700E6E1CC /* UIKit.framework */; };
+		9EB6078B14EEE9A700E6E1CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB6078A14EEE9A700E6E1CC /* Foundation.framework */; };
+		9EB6078D14EEE9A700E6E1CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB6078C14EEE9A700E6E1CC /* CoreGraphics.framework */; };
+		9EB6078F14EEE9A700E6E1CC /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB6078E14EEE9A700E6E1CC /* CoreData.framework */; };
+		9EB6079514EEE9A700E6E1CC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9EB6079314EEE9A700E6E1CC /* InfoPlist.strings */; };
+		9EB6079714EEE9A700E6E1CC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6079614EEE9A700E6E1CC /* main.m */; };
+		9EB6079B14EEE9A700E6E1CC /* ZRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB6079A14EEE9A700E6E1CC /* ZRAppDelegate.m */; };
+		9EB607A714EEE9CA00E6E1CC /* FunnySiri.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9EB607A514EEE9CA00E6E1CC /* FunnySiri.xcdatamodeld */; };
+		9EB607A914EEEC0A00E6E1CC /* FunnySiri.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9EB607A814EEEC0A00E6E1CC /* FunnySiri.sqlite */; };
+		9EB607AB14EEEC1E00E6E1CC /* siri-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EB607AA14EEEC1E00E6E1CC /* siri-logo.png */; };
+		9EB607B714EEEF7100E6E1CC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB607B614EEEF7100E6E1CC /* RootViewController.m */; };
+		9EB607DF14EEF37100E6E1CC /* ZRLeftBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB607DE14EEF37100E6E1CC /* ZRLeftBubbleCell.m */; };
+		9EB607E214EEF61800E6E1CC /* ZRRightBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB607E114EEF61800E6E1CC /* ZRRightBubbleCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9EB6078414EEE9A700E6E1CC /* FunnySiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnySiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EB6078814EEE9A700E6E1CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9EB6078A14EEE9A700E6E1CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9EB6078C14EEE9A700E6E1CC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9EB6078E14EEE9A700E6E1CC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9EB6079214EEE9A700E6E1CC /* FunnySiri-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FunnySiri-Info.plist"; sourceTree = "<group>"; };
+		9EB6079414EEE9A700E6E1CC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9EB6079614EEE9A700E6E1CC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9EB6079814EEE9A700E6E1CC /* FunnySiri-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FunnySiri-Prefix.pch"; sourceTree = "<group>"; };
+		9EB6079914EEE9A700E6E1CC /* ZRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZRAppDelegate.h; sourceTree = "<group>"; };
+		9EB6079A14EEE9A700E6E1CC /* ZRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZRAppDelegate.m; sourceTree = "<group>"; };
+		9EB607A614EEE9CA00E6E1CC /* FunnySiri.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FunnySiri.xcdatamodel; sourceTree = "<group>"; };
+		9EB607A814EEEC0A00E6E1CC /* FunnySiri.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = FunnySiri.sqlite; sourceTree = "<group>"; };
+		9EB607AA14EEEC1E00E6E1CC /* siri-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "siri-logo.png"; sourceTree = "<group>"; };
+		9EB607B514EEEF7100E6E1CC /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		9EB607B614EEEF7100E6E1CC /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9EB607DD14EEF37100E6E1CC /* ZRLeftBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRLeftBubbleCell.h; sourceTree = "<group>"; };
+		9EB607DE14EEF37100E6E1CC /* ZRLeftBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRLeftBubbleCell.m; sourceTree = "<group>"; };
+		9EB607E014EEF61800E6E1CC /* ZRRightBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRRightBubbleCell.h; sourceTree = "<group>"; };
+		9EB607E114EEF61800E6E1CC /* ZRRightBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRRightBubbleCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9EB6078114EEE9A700E6E1CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB6078914EEE9A700E6E1CC /* UIKit.framework in Frameworks */,
+				9EB6078B14EEE9A700E6E1CC /* Foundation.framework in Frameworks */,
+				9EB6078D14EEE9A700E6E1CC /* CoreGraphics.framework in Frameworks */,
+				9EB6078F14EEE9A700E6E1CC /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9EB6077914EEE9A700E6E1CC = {
+			isa = PBXGroup;
+			children = (
+				9EB6079014EEE9A700E6E1CC /* FunnySiri */,
+				9EB6078714EEE9A700E6E1CC /* Frameworks */,
+				9EB6078514EEE9A700E6E1CC /* Products */,
+				9EB607A414EEE9BD00E6E1CC /* Resources */,
+			);
+			sourceTree = "<group>";
+		};
+		9EB6078514EEE9A700E6E1CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9EB6078414EEE9A700E6E1CC /* FunnySiri.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9EB6078714EEE9A700E6E1CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9EB6078814EEE9A700E6E1CC /* UIKit.framework */,
+				9EB6078A14EEE9A700E6E1CC /* Foundation.framework */,
+				9EB6078C14EEE9A700E6E1CC /* CoreGraphics.framework */,
+				9EB6078E14EEE9A700E6E1CC /* CoreData.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EB6079014EEE9A700E6E1CC /* FunnySiri */ = {
+			isa = PBXGroup;
+			children = (
+				9EB6079914EEE9A700E6E1CC /* ZRAppDelegate.h */,
+				9EB6079A14EEE9A700E6E1CC /* ZRAppDelegate.m */,
+				9EB607AC14EEEF3F00E6E1CC /* Common */,
+				9EB6079114EEE9A700E6E1CC /* Supporting Files */,
+			);
+			path = FunnySiri;
+			sourceTree = "<group>";
+		};
+		9EB6079114EEE9A700E6E1CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9EB6079214EEE9A700E6E1CC /* FunnySiri-Info.plist */,
+				9EB6079314EEE9A700E6E1CC /* InfoPlist.strings */,
+				9EB6079614EEE9A700E6E1CC /* main.m */,
+				9EB6079814EEE9A700E6E1CC /* FunnySiri-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9EB607A414EEE9BD00E6E1CC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9EB607A814EEEC0A00E6E1CC /* FunnySiri.sqlite */,
+				9EB607A514EEE9CA00E6E1CC /* FunnySiri.xcdatamodeld */,
+				9EB607AA14EEEC1E00E6E1CC /* siri-logo.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9EB607AC14EEEF3F00E6E1CC /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9EB607AD14EEEF3F00E6E1CC /* Controller */,
+				9EB607AE14EEEF3F00E6E1CC /* View */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		9EB607AD14EEEF3F00E6E1CC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9EB607B514EEEF7100E6E1CC /* RootViewController.h */,
+				9EB607B614EEEF7100E6E1CC /* RootViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9EB607AE14EEEF3F00E6E1CC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9EB607DD14EEF37100E6E1CC /* ZRLeftBubbleCell.h */,
+				9EB607DE14EEF37100E6E1CC /* ZRLeftBubbleCell.m */,
+				9EB607E014EEF61800E6E1CC /* ZRRightBubbleCell.h */,
+				9EB607E114EEF61800E6E1CC /* ZRRightBubbleCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9EB6078314EEE9A700E6E1CC /* FunnySiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EB607A114EEE9A700E6E1CC /* Build configuration list for PBXNativeTarget "FunnySiri" */;
+			buildPhases = (
+				9EB6078014EEE9A700E6E1CC /* Sources */,
+				9EB6078114EEE9A700E6E1CC /* Frameworks */,
+				9EB6078214EEE9A700E6E1CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FunnySiri;
+			productName = FunnySiri;
+			productReference = 9EB6078414EEE9A700E6E1CC /* FunnySiri.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EB6077B14EEE9A700E6E1CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 9EB6077E14EEE9A700E6E1CC /* Build configuration list for PBXProject "FunnySiri" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9EB6077914EEE9A700E6E1CC;
+			productRefGroup = 9EB6078514EEE9A700E6E1CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9EB6078314EEE9A700E6E1CC /* FunnySiri */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9EB6078214EEE9A700E6E1CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB6079514EEE9A700E6E1CC /* InfoPlist.strings in Resources */,
+				9EB607A914EEEC0A00E6E1CC /* FunnySiri.sqlite in Resources */,
+				9EB607AB14EEEC1E00E6E1CC /* siri-logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9EB6078014EEE9A700E6E1CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EB6079714EEE9A700E6E1CC /* main.m in Sources */,
+				9EB6079B14EEE9A700E6E1CC /* ZRAppDelegate.m in Sources */,
+				9EB607A714EEE9CA00E6E1CC /* FunnySiri.xcdatamodeld in Sources */,
+				9EB607B714EEEF7100E6E1CC /* RootViewController.m in Sources */,
+				9EB607DF14EEF37100E6E1CC /* ZRLeftBubbleCell.m in Sources */,
+				9EB607E214EEF61800E6E1CC /* ZRRightBubbleCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9EB6079314EEE9A700E6E1CC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EB6079414EEE9A700E6E1CC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9EB6079F14EEE9A700E6E1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9EB607A014EEE9A700E6E1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9EB607A214EEE9A700E6E1CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FunnySiri/FunnySiri-Prefix.pch";
+				INFOPLIST_FILE = "FunnySiri/FunnySiri-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9EB607A314EEE9A700E6E1CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FunnySiri/FunnySiri-Prefix.pch";
+				INFOPLIST_FILE = "FunnySiri/FunnySiri-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9EB6077E14EEE9A700E6E1CC /* Build configuration list for PBXProject "FunnySiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB6079F14EEE9A700E6E1CC /* Debug */,
+				9EB607A014EEE9A700E6E1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EB607A114EEE9A700E6E1CC /* Build configuration list for PBXNativeTarget "FunnySiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EB607A214EEE9A700E6E1CC /* Debug */,
+				9EB607A314EEE9A700E6E1CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9EB607A514EEE9CA00E6E1CC /* FunnySiri.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9EB607A614EEE9CA00E6E1CC /* FunnySiri.xcdatamodel */,
+			);
+			currentVersion = 9EB607A614EEE9CA00E6E1CC /* FunnySiri.xcdatamodel */;
+			path = FunnySiri.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9EB6077B14EEE9A700E6E1CC /* Project object */;
+}

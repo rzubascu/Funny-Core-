@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K540" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="QAInfo" syncable="YES">
+        <attribute name="answer1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="answer5" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question3" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question4" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="question5" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="QAInfo" positionX="160" positionY="192" width="128" height="195"/>
+    </elements>
+</model>
