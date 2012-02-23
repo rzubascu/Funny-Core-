@@ -28,7 +28,6 @@
 - (NSArray *)getCurrentQAArrayFromManagedObject:(NSManagedObject *)managedObject;
 
 
-
 @end
 
 #pragma mark - Public
@@ -38,7 +37,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-		 self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
+//		 self.view.backgroundColor = [UIColor scrollViewTexturedBackgroundColor];
 		 
 		 ZRAppDelegate *appDelegate = (ZRAppDelegate *)[[UIApplication sharedApplication] delegate];
 		 NSManagedObjectContext *context = [appDelegate managedObjectContext];
@@ -51,8 +50,9 @@
 		 
 		 UIButton *siriButton = [UIButton buttonWithType:UIButtonTypeCustom];
 		 siriButton.frame = CGRectMake(100.0f, 350.0f, 50.0f, 50.0f);
-		 [siriButton setImage:[UIImage imageNamed:@"siri-logo.png"] forState:UIControlStateNormal];
-//		 [self.view addSubview:siriButton];
+		 [siriButton setImage:[UIImage imageNamed:@"siri_normal.png"] forState:UIControlStateNormal];
+		 [siriButton setImage:[UIImage imageNamed:@"siri_pressed.png"] forState:UIControlStateHighlighted];
+
 		 		 
 		 // Table view initialization
 		 _bubbleTableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
@@ -62,7 +62,13 @@
 		 _bubbleTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 		 _bubbleTableView.rowHeight = 100.0f;
 		 
+		 UIImageView *backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
+		 backgroundImageView.image = [UIImage imageNamed:@"siri_background.png"];
+		 
+		 [self.view addSubview:backgroundImageView];
 		 [self.view addSubview:_bubbleTableView];
+		 [self.view addSubview:siriButton];
+
     }
     return self;
 }
@@ -89,9 +95,13 @@
 
 #pragma mark - Table View delegate
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+	return [_qaArray count];
+}
+
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-	return [_qaArray count];
+	return 1;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -99,17 +109,23 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-	return 0.0f;
+	return 20.0f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
 	return 0.0f;
 }
 
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+	UIView *headerView = [[UIView alloc] initWithFrame:CGRectMake(0.0f, 0.0f, tableView.frame.size.width, 20.0f)];
+	headerView.backgroundColor = [UIColor clearColor];
+	return headerView;
+}
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	static NSString *cellIdentifier = @"BubbleViewCell";
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-	Class cellClass = (indexPath.row%2 == 0) ? [ZRLeftBubbleCell class] : [ZRRightBubbleCell class];
+	Class cellClass = (indexPath.section%2 == 0) ? [ZRLeftBubbleCell class] : [ZRRightBubbleCell class];
 	if (cell == nil) {
 		cell = [[cellClass alloc] initWithStyle:UITableViewCellStyleDefault 
 										reuseIdentifier:cellIdentifier

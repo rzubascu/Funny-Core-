@@ -20,6 +20,10 @@
 		9EB607B714EEEF7100E6E1CC /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB607B614EEEF7100E6E1CC /* RootViewController.m */; };
 		9EB607DF14EEF37100E6E1CC /* ZRLeftBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB607DE14EEF37100E6E1CC /* ZRLeftBubbleCell.m */; };
 		9EB607E214EEF61800E6E1CC /* ZRRightBubbleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EB607E114EEF61800E6E1CC /* ZRRightBubbleCell.m */; };
+		9EE1A01814F6D00000D8E9DD /* siri_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1A01514F6D00000D8E9DD /* siri_inactive.png */; };
+		9EE1A01914F6D00000D8E9DD /* siri_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1A01614F6D00000D8E9DD /* siri_normal.png */; };
+		9EE1A01A14F6D00000D8E9DD /* siri_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1A01714F6D00000D8E9DD /* siri_pressed.png */; };
+		9EE1A01D14F6D19700D8E9DD /* siri_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 9EE1A01C14F6D19700D8E9DD /* siri_background.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		9EB607DE14EEF37100E6E1CC /* ZRLeftBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRLeftBubbleCell.m; sourceTree = "<group>"; };
 		9EB607E014EEF61800E6E1CC /* ZRRightBubbleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRRightBubbleCell.h; sourceTree = "<group>"; };
 		9EB607E114EEF61800E6E1CC /* ZRRightBubbleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRRightBubbleCell.m; sourceTree = "<group>"; };
+		9EE1A01514F6D00000D8E9DD /* siri_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siri_inactive.png; sourceTree = "<group>"; };
+		9EE1A01614F6D00000D8E9DD /* siri_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siri_normal.png; sourceTree = "<group>"; };
+		9EE1A01714F6D00000D8E9DD /* siri_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siri_pressed.png; sourceTree = "<group>"; };
+		9EE1A01C14F6D19700D8E9DD /* siri_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = siri_background.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,10 @@
 		9EB607A414EEE9BD00E6E1CC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9EE1A01C14F6D19700D8E9DD /* siri_background.png */,
+				9EE1A01514F6D00000D8E9DD /* siri_inactive.png */,
+				9EE1A01614F6D00000D8E9DD /* siri_normal.png */,
+				9EE1A01714F6D00000D8E9DD /* siri_pressed.png */,
 				9EB607A814EEEC0A00E6E1CC /* FunnySiri.sqlite */,
 				9EB607A514EEE9CA00E6E1CC /* FunnySiri.xcdatamodeld */,
 				9EB607AA14EEEC1E00E6E1CC /* siri-logo.png */,
@@ -203,6 +215,10 @@
 				9EB6079514EEE9A700E6E1CC /* InfoPlist.strings in Resources */,
 				9EB607A914EEEC0A00E6E1CC /* FunnySiri.sqlite in Resources */,
 				9EB607AB14EEEC1E00E6E1CC /* siri-logo.png in Resources */,
+				9EE1A01814F6D00000D8E9DD /* siri_inactive.png in Resources */,
+				9EE1A01914F6D00000D8E9DD /* siri_normal.png in Resources */,
+				9EE1A01A14F6D00000D8E9DD /* siri_pressed.png in Resources */,
+				9EE1A01D14F6D19700D8E9DD /* siri_background.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +340,7 @@
 				9EB607A314EEE9A700E6E1CC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
