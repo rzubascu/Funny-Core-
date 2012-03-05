@@ -10,6 +10,7 @@
 #import "ZRLeftBubbleCell.h"
 #import "ZRRightBubbleCell.h"
 #import "ZRAppDelegate.h"
+#import "ZRButtonStandView.h"
 
 #pragma mark - Private
 
@@ -49,7 +50,8 @@
 		 _qaArray = [self getCurrentQAArrayFromManagedObject:_currentManagedObject];
 		 
 		 UIButton *siriButton = [UIButton buttonWithType:UIButtonTypeCustom];
-		 siriButton.frame = CGRectMake(100.0f, 350.0f, 50.0f, 50.0f);
+		 siriButton.frame = CGRectMake(0.0f, 0.0f, 70.0f, 70.0f);
+		 siriButton.center = CGPointMake(160.0f, 50.0f);
 		 [siriButton setImage:[UIImage imageNamed:@"siri_normal.png"] forState:UIControlStateNormal];
 		 [siriButton setImage:[UIImage imageNamed:@"siri_pressed.png"] forState:UIControlStateHighlighted];
 
@@ -65,9 +67,13 @@
 		 UIImageView *backgroundImageView = [[UIImageView alloc] initWithFrame:self.view.bounds];
 		 backgroundImageView.image = [UIImage imageNamed:@"siri_background.png"];
 		 
+		 ZRButtonStandView *standView = [[ZRButtonStandView alloc] initWithFrame:CGRectMake(0.0f, 380.0f, 320.0f, 100.0f)];
+		 
 		 [self.view addSubview:backgroundImageView];
 		 [self.view addSubview:_bubbleTableView];
-		 [self.view addSubview:siriButton];
+		 [standView addSubview:siriButton];
+
+		 [self.view addSubview:standView];
 
     }
     return self;

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E26452F1505539A00EC117B /* ZRButtonStandView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E26452E1505539A00EC117B /* ZRButtonStandView.m */; };
+		9E2645321505574B00EC117B /* siri_button_stand~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E2645301505574B00EC117B /* siri_button_stand~ipad.png */; };
+		9E2645331505574B00EC117B /* siri_button_stand~iphone.psd in Resources */ = {isa = PBXBuildFile; fileRef = 9E2645311505574B00EC117B /* siri_button_stand~iphone.psd */; };
+		9E2645351505576A00EC117B /* siri_button_stand@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E2645341505576A00EC117B /* siri_button_stand@2x~iphone.png */; };
+		9E2645371505599D00EC117B /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E2645361505599D00EC117B /* QuartzCore.framework */; };
 		9EB6078914EEE9A700E6E1CC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB6078814EEE9A700E6E1CC /* UIKit.framework */; };
 		9EB6078B14EEE9A700E6E1CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB6078A14EEE9A700E6E1CC /* Foundation.framework */; };
 		9EB6078D14EEE9A700E6E1CC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EB6078C14EEE9A700E6E1CC /* CoreGraphics.framework */; };
@@ -27,6 +32,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E26452D1505539A00EC117B /* ZRButtonStandView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRButtonStandView.h; sourceTree = "<group>"; };
+		9E26452E1505539A00EC117B /* ZRButtonStandView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRButtonStandView.m; sourceTree = "<group>"; };
+		9E2645301505574B00EC117B /* siri_button_stand~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "siri_button_stand~ipad.png"; sourceTree = "<group>"; };
+		9E2645311505574B00EC117B /* siri_button_stand~iphone.psd */ = {isa = PBXFileReference; lastKnownFileType = file; path = "siri_button_stand~iphone.psd"; sourceTree = "<group>"; };
+		9E2645341505576A00EC117B /* siri_button_stand@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "siri_button_stand@2x~iphone.png"; sourceTree = "<group>"; };
+		9E2645361505599D00EC117B /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9EB6078414EEE9A700E6E1CC /* FunnySiri.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunnySiri.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EB6078814EEE9A700E6E1CC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9EB6078A14EEE9A700E6E1CC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -58,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E2645371505599D00EC117B /* QuartzCore.framework in Frameworks */,
 				9EB6078914EEE9A700E6E1CC /* UIKit.framework in Frameworks */,
 				9EB6078B14EEE9A700E6E1CC /* Foundation.framework in Frameworks */,
 				9EB6078D14EEE9A700E6E1CC /* CoreGraphics.framework in Frameworks */,
@@ -89,6 +101,7 @@
 		9EB6078714EEE9A700E6E1CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9E2645361505599D00EC117B /* QuartzCore.framework */,
 				9EB6078814EEE9A700E6E1CC /* UIKit.framework */,
 				9EB6078A14EEE9A700E6E1CC /* Foundation.framework */,
 				9EB6078C14EEE9A700E6E1CC /* CoreGraphics.framework */,
@@ -122,6 +135,9 @@
 		9EB607A414EEE9BD00E6E1CC /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9E2645301505574B00EC117B /* siri_button_stand~ipad.png */,
+				9E2645341505576A00EC117B /* siri_button_stand@2x~iphone.png */,
+				9E2645311505574B00EC117B /* siri_button_stand~iphone.psd */,
 				9EE1A01C14F6D19700D8E9DD /* siri_background.png */,
 				9EE1A01514F6D00000D8E9DD /* siri_inactive.png */,
 				9EE1A01614F6D00000D8E9DD /* siri_normal.png */,
@@ -158,6 +174,8 @@
 				9EB607DE14EEF37100E6E1CC /* ZRLeftBubbleCell.m */,
 				9EB607E014EEF61800E6E1CC /* ZRRightBubbleCell.h */,
 				9EB607E114EEF61800E6E1CC /* ZRRightBubbleCell.m */,
+				9E26452D1505539A00EC117B /* ZRButtonStandView.h */,
+				9E26452E1505539A00EC117B /* ZRButtonStandView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -219,6 +237,9 @@
 				9EE1A01914F6D00000D8E9DD /* siri_normal.png in Resources */,
 				9EE1A01A14F6D00000D8E9DD /* siri_pressed.png in Resources */,
 				9EE1A01D14F6D19700D8E9DD /* siri_background.png in Resources */,
+				9E2645321505574B00EC117B /* siri_button_stand~ipad.png in Resources */,
+				9E2645331505574B00EC117B /* siri_button_stand~iphone.psd in Resources */,
+				9E2645351505576A00EC117B /* siri_button_stand@2x~iphone.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +256,7 @@
 				9EB607B714EEEF7100E6E1CC /* RootViewController.m in Sources */,
 				9EB607DF14EEF37100E6E1CC /* ZRLeftBubbleCell.m in Sources */,
 				9EB607E214EEF61800E6E1CC /* ZRRightBubbleCell.m in Sources */,
+				9E26452F1505539A00EC117B /* ZRButtonStandView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +280,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -273,6 +296,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -302,10 +327,14 @@
 		9EB607A214EEE9A700E6E1CC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FunnySiri/FunnySiri-Prefix.pch";
 				INFOPLIST_FILE = "FunnySiri/FunnySiri-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
